@@ -34,6 +34,14 @@ const studentSchema = new mongoose.Schema({
   diemHoa: {
     type: Number,
     required: true
+  },
+  diemTB: {
+    type: Number,
+    required: true
+  },
+  xepLoai: {
+    type: String,
+    required: true
   }
 });
 

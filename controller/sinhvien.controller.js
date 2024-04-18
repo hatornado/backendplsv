@@ -2,6 +2,7 @@ const Student = require('../models/sinhvien.model'); // Import model sinh viên
 
 // Controller để tạo một sinh viên mới
 exports.createStudent = async (req, res) => {
+  console.log(req,res)
   try {
     const student = new Student(req.body);
     await student.save();

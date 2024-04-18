@@ -1,8 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const studentController = require('./controller/sinhvien.controller');
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+
+app.use(cors());
 
 
 // Kết nối với MongoDB (thay đổi URL kết nối thành MongoDB của bạn)
